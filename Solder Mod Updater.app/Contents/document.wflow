@@ -167,7 +167,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:226.000000</string>
+				<string>361.500000:226.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -224,7 +224,7 @@
 					<key>replaceExisting</key>
 					<false/>
 					<key>toDirectory</key>
-					<string>~/Desktop/mods</string>
+					<string>~/Desktop/Finished Mods/mods</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.CopyFiles</string>
@@ -284,12 +284,10 @@
 						<string>1</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:329.000000</string>
+				<string>361.500000:329.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Copy Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -366,6 +364,178 @@
 				<key>arguments</key>
 				<dict/>
 			</dict>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>for argument in "$@"
+do
+	basename "$argument"
+done</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>1</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.3</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>4D351A9E-39AF-4EAC-B479-662D06F6CC65</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>3BD11FD2-BAC9-428E-BB96-EDFD3CF41C3A</string>
+				<key>UUID</key>
+				<string>FF7CC719-053B-4F49-BB99-E5C727413B45</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>361.500000:578.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -465,122 +635,10 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:501.000000</string>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
-			</dict>
-			<key>isViewVisible</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<false/>
-					<key>Types</key>
-					<array>
-						<string>*</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>v.1.0.2</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>variableUUID</key>
-					<dict>
-						<key>isPathPopUp</key>
-						<false/>
-						<key>selectedVariableUUID</key>
-						<string>A53545B6-77C0-49A7-8107-FB3E0BB4B1F3</string>
-					</dict>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>*</string>
-					</array>
-				</dict>
-				<key>AMRequiredResources</key>
-				<array/>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Set Value of Variable.action</string>
-				<key>ActionName</key>
-				<string>Set Value of Variable</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>variableUUID</key>
-					<string>A53545B6-77C0-49A7-8107-FB3E0BB4B1F3</string>
-				</dict>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Set_Value_of_Variable</string>
-				<key>CFBundleVersion</key>
-				<string>1.0.2</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<true/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryUtilities</string>
-				</array>
-				<key>Class Name</key>
-				<string>Set_Value_of_Variable</string>
-				<key>InputUUID</key>
-				<string>DD9B56AF-93B9-4E16-A11A-CDA893913972</string>
-				<key>Keywords</key>
-				<array>
-					<string>variable</string>
-					<string>binding</string>
-					<string>input</string>
-					<string>output</string>
-					<string>storage</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>ED378F76-A682-4B43-9970-93327C161BAA</string>
-				<key>UUID</key>
-				<string>FBCF9B69-D57E-4D65-A3C1-BD1B90ABFAF7</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>arguments</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>default value</key>
-						<string></string>
-						<key>name</key>
-						<string>variableUUID</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>0</string>
-					</dict>
-				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
-				<key>isViewVisible</key>
-				<true/>
-				<key>location</key>
-				<string>474.000000:607.000000</string>
+				<string>361.500000:684.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -636,8 +694,9 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>mkdir -p Desktop/mods
-mkdir -p Desktop/FinishedMods</string>
+					<string>mkdir -p Desktop/Finished\ Mods
+rm -rf -p Desktop/Finished\ Mods/mods
+mkdir -p Desktop/Finished\ Mods/mods</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -673,8 +732,6 @@ mkdir -p Desktop/FinishedMods</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>4E81C7AF-AE45-42A7-9A4E-25524E47F2D2</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>CBC6513E-8ADC-41FA-920F-EC602C8FEA77</string>
 				<key>UnlocalizedApplications</key>
@@ -752,7 +809,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:790.000000</string>
+				<string>361.500000:867.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -801,7 +858,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<dict>
 					<key>fileNames</key>
 					<array>
-						<string>~/Desktop/mods</string>
+						<string>~/Desktop/Finished Mods/mods</string>
 					</array>
 				</dict>
 				<key>BundleIdentifier</key>
@@ -854,7 +911,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:1028.000000</string>
+				<string>361.500000:1105.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1002,7 +1059,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:1179.000000</string>
+				<string>361.500000:1256.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Create Archive.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1051,7 +1108,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<dict>
 					<key>fileNames</key>
 					<array>
-						<string>~/Desktop/themodzip.zip</string>
+						<string>~/Desktop/Finished Mods/themodzip.zip</string>
 					</array>
 				</dict>
 				<key>BundleIdentifier</key>
@@ -1104,7 +1161,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:1417.000000</string>
+				<string>361.500000:1494.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -1161,7 +1218,7 @@ mkdir -p Desktop/FinishedMods</string>
 					<key>replaceExisting</key>
 					<false/>
 					<key>toDirectory</key>
-					<string>~/Desktop/FinishedMods</string>
+					<string>~/Desktop/Finished Mods</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.MoveFiles</string>
@@ -1224,9 +1281,181 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:1520.000000</string>
+				<string>361.500000:1597.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Move Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>for argument in "$4"
+do
+	basename "$argument"
+done</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>1</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.3</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>807DDAB4-2430-4F84-94A0-6677649A3509</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>FA587885-6229-4509-8DEF-B506DC32C075</string>
+				<key>UUID</key>
+				<string>0E23066F-4BEF-4B0E-A4D0-51524783644B</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>361.500000:1780.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -1269,7 +1498,7 @@ mkdir -p Desktop/FinishedMods</string>
 					<dict>
 						<key>tokenizedValue</key>
 						<array>
-							<string>Name of Mod (</string>
+							<string>Mod Name (</string>
 							<string>$(3F62D9CB-173B-4970-AD6C-BE9B6B23E493)</string>
 							<string>)</string>
 						</array>
@@ -1293,13 +1522,13 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>buttonAffirmative</key>
-					<string>OK</string>
+					<string>Next</string>
 					<key>buttonNegative</key>
 					<string>Cancel</string>
 					<key>defaultAnswer</key>
 					<string>$(A53545B6-77C0-49A7-8107-FB3E0BB4B1F3)</string>
 					<key>defaultMessage</key>
-					<string>Name of Mod ($(3F62D9CB-173B-4970-AD6C-BE9B6B23E493))</string>
+					<string>Mod Name ($(3F62D9CB-173B-4970-AD6C-BE9B6B23E493))</string>
 					<key>requireInput</key>
 					<true/>
 				</dict>
@@ -1405,7 +1634,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:1702.000000</string>
+				<string>361.500000:1962.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1488,8 +1717,6 @@ mkdir -p Desktop/FinishedMods</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>5EFD7353-7D66-4FD3-B0CF-AD4D92E34395</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>573BABBC-DA5A-4860-81B9-909E755928AA</string>
 				<key>UnlocalizedApplications</key>
@@ -1512,14 +1739,184 @@ mkdir -p Desktop/FinishedMods</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:1808.000000</string>
+				<string>361.500000:2068.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.3</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<dict/>
+					<key>CheckedForUserDefaultShell</key>
+					<dict/>
+					<key>inputMethod</key>
+					<dict/>
+					<key>shell</key>
+					<dict/>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.string</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run Shell Script.action</string>
+				<key>ActionName</key>
+				<string>Run Shell Script</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>COMMAND_STRING</key>
+					<string>for argument in "$4"
+do
+	basename "$argument"
+done</string>
+					<key>CheckedForUserDefaultShell</key>
+					<true/>
+					<key>inputMethod</key>
+					<integer>1</integer>
+					<key>shell</key>
+					<string>/bin/bash</string>
+					<key>source</key>
+					<string></string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.RunShellScript</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.3</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunShellScriptAction</string>
+				<key>InputUUID</key>
+				<string>46A00524-8326-4CF0-9E85-D019A78EBA97</string>
+				<key>Keywords</key>
+				<array>
+					<string>Shell</string>
+					<string>Script</string>
+					<string>Command</string>
+					<string>Run</string>
+					<string>Unix</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>0114EBB4-DE99-461B-B0D5-7EF4A4D4D2FA</string>
+				<key>UUID</key>
+				<string>A762DAC4-DE92-4DCB-B3E2-43728AAE5C8D</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>inputMethod</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>CheckedForUserDefaultShell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>COMMAND_STRING</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>/bin/sh</string>
+						<key>name</key>
+						<string>shell</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>361.500000:2251.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -1586,7 +1983,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>buttonAffirmative</key>
-					<string>OK</string>
+					<string>Compile</string>
 					<key>buttonNegative</key>
 					<string>Cancel</string>
 					<key>defaultAnswer</key>
@@ -1698,7 +2095,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:1990.000000</string>
+				<string>361.500000:2433.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Ask for Text.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1783,8 +2180,6 @@ mkdir -p Desktop/FinishedMods</string>
 				</array>
 				<key>OutputUUID</key>
 				<string>90394008-5ED5-4C71-9A90-4A0BE6A3CC66</string>
-				<key>StartAction</key>
-				<false/>
 				<key>UUID</key>
 				<string>BC8A1628-D9D0-43B3-AD05-0F3A002CCBC5</string>
 				<key>UnlocalizedApplications</key>
@@ -1810,7 +2205,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:2096.000000</string>
+				<string>361.500000:2539.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Set Value of Variable.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1859,7 +2254,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<dict>
 					<key>fileNames</key>
 					<array>
-						<string>~/Desktop/FinishedMods/themodzip.zip</string>
+						<string>~/Desktop/Finished Mods/themodzip.zip</string>
 					</array>
 				</dict>
 				<key>BundleIdentifier</key>
@@ -1912,7 +2307,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:2334.000000</string>
+				<string>361.500000:2777.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified Finder Items.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -2406,7 +2801,7 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:2522.000000</string>
+				<string>361.500000:2965.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -2462,8 +2857,8 @@ mkdir -p Desktop/FinishedMods</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>rm -rf Desktop/mods
-mkdir Desktop/mods</string>
+					<string>rm -f -p Desktop/themodzip.zip
+rm -rf Desktop/Finished\ Mods/mods</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -2576,9 +2971,151 @@ mkdir Desktop/mods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:2705.000000</string>
+				<string>361.500000:3148.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>v.1.0</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>message</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>$(A53545B6-77C0-49A7-8107-FB3E0BB4B1F3)</string>
+							<string>-</string>
+							<string>$(BB322695-3A4E-4FA3-8934-D6BBC6469557)</string>
+						</array>
+					</dict>
+					<key>subtitle</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Mod Updated!</string>
+						</array>
+					</dict>
+					<key>title</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Solder Mod Updator</string>
+						</array>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Display Notification.action</string>
+				<key>ActionName</key>
+				<string>Display Notification</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>message</key>
+					<string>$(A53545B6-77C0-49A7-8107-FB3E0BB4B1F3)-$(BB322695-3A4E-4FA3-8934-D6BBC6469557)</string>
+					<key>subtitle</key>
+					<string>Mod Updated!</string>
+					<key>title</key>
+					<string>Solder Mod Updator</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.Display-Notification</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMDisplayNotificationAction</string>
+				<key>InputUUID</key>
+				<string>3E91B7B0-73AB-43AF-83B8-54D9DE1908E6</string>
+				<key>Keywords</key>
+				<array/>
+				<key>OutputUUID</key>
+				<string>475E9C23-D0B8-4ADA-8FD2-BE06C85CAF4E</string>
+				<key>UUID</key>
+				<string>4CF4750C-411E-4C97-9C0A-7C382C0DB373</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>subtitle</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>title</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>message</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>361.500000:3338.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Display Notification.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -2724,7 +3261,7 @@ mkdir Desktop/mods</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>474.000000:2834.000000</string>
+				<string>361.500000:3467.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Loop.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -2734,124 +3271,145 @@ mkdir Desktop/mods</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>0862F969-B3AE-44FF-B892-78F36BA4F5DD</key>
+		<key>06F67500-1EE8-4440-BC62-6DD149910BAB</key>
 		<dict>
 			<key>from</key>
-			<string>573BABBC-DA5A-4860-81B9-909E755928AA - 573BABBC-DA5A-4860-81B9-909E755928AA</string>
+			<string>CBC6513E-8ADC-41FA-920F-EC602C8FEA77 - CBC6513E-8ADC-41FA-920F-EC602C8FEA77</string>
 			<key>to</key>
-			<string>AC164BB2-15F4-4C93-839B-EC35E906404C - AC164BB2-15F4-4C93-839B-EC35E906404C</string>
+			<string>5681C1DE-F421-4F85-BA63-64E30D9AAD44 - 5681C1DE-F421-4F85-BA63-64E30D9AAD44</string>
 		</dict>
-		<key>19B4EDBC-B6AB-4047-BEA7-589FF49B95EA</key>
+		<key>174FD741-6F20-4B7F-B3D5-0C7F575FE62A</key>
+		<dict>
+			<key>from</key>
+			<string>1E1A05EA-8DBC-430E-A532-C795BDE4F55B - 1E1A05EA-8DBC-430E-A532-C795BDE4F55B</string>
+			<key>to</key>
+			<string>FF7CC719-053B-4F49-BB99-E5C727413B45 - FF7CC719-053B-4F49-BB99-E5C727413B45</string>
+		</dict>
+		<key>1E2965DF-A481-4165-96DB-957FDCB41501</key>
 		<dict>
 			<key>from</key>
 			<string>371C0624-6C47-42E4-BE8F-8A88A2FA0004 - 371C0624-6C47-42E4-BE8F-8A88A2FA0004</string>
 			<key>to</key>
 			<string>D01C1A3B-FE81-425C-A12C-5566BDDDAA91 - D01C1A3B-FE81-425C-A12C-5566BDDDAA91</string>
 		</dict>
-		<key>5173AA29-9B31-425E-80C1-EE49FE96F2A9</key>
+		<key>2B44C277-0D73-47BB-868E-7F4551339173</key>
 		<dict>
 			<key>from</key>
-			<string>D01C1A3B-FE81-425C-A12C-5566BDDDAA91 - D01C1A3B-FE81-425C-A12C-5566BDDDAA91</string>
+			<string>4CF4750C-411E-4C97-9C0A-7C382C0DB373 - 4CF4750C-411E-4C97-9C0A-7C382C0DB373</string>
 			<key>to</key>
-			<string>1E1A05EA-8DBC-430E-A532-C795BDE4F55B - 1E1A05EA-8DBC-430E-A532-C795BDE4F55B</string>
+			<string>84DE6E17-ABA9-4BB8-9442-0D6926AC56CB - 84DE6E17-ABA9-4BB8-9442-0D6926AC56CB</string>
 		</dict>
-		<key>66D35604-086D-4420-B12F-0F58C3217406</key>
+		<key>424E1FCD-DB61-45B7-BF79-86CFB6F37BC0</key>
 		<dict>
 			<key>from</key>
-			<string>DBC4D568-069B-43AC-8B65-E505E4D8B03C - DBC4D568-069B-43AC-8B65-E505E4D8B03C</string>
+			<string>A762DAC4-DE92-4DCB-B3E2-43728AAE5C8D - A762DAC4-DE92-4DCB-B3E2-43728AAE5C8D</string>
 			<key>to</key>
-			<string>FB6162A4-F4DB-4215-B85B-8720E77057B6 - FB6162A4-F4DB-4215-B85B-8720E77057B6</string>
-		</dict>
-		<key>75CF54BA-58F2-4F6F-810E-F4E217A65A8F</key>
-		<dict>
-			<key>from</key>
-			<string>FBCF9B69-D57E-4D65-A3C1-BD1B90ABFAF7 - FBCF9B69-D57E-4D65-A3C1-BD1B90ABFAF7</string>
-			<key>to</key>
-			<string>CBC6513E-8ADC-41FA-920F-EC602C8FEA77 - CBC6513E-8ADC-41FA-920F-EC602C8FEA77</string>
-		</dict>
-		<key>7B39908E-2D07-4700-B8D5-58B8DFD2D653</key>
-		<dict>
-			<key>from</key>
-			<string>376F25BA-D904-43AA-9372-92A4143F7FC7 - 376F25BA-D904-43AA-9372-92A4143F7FC7</string>
-			<key>to</key>
-			<string>78531E74-AD79-4AB1-8649-E127D6A143C3 - 78531E74-AD79-4AB1-8649-E127D6A143C3</string>
-		</dict>
-		<key>A0733791-AC1D-4D60-BABD-46B6898C3925</key>
-		<dict>
-			<key>from</key>
-			<string>BC8A1628-D9D0-43B3-AD05-0F3A002CCBC5 - BC8A1628-D9D0-43B3-AD05-0F3A002CCBC5</string>
-			<key>to</key>
-			<string>376F25BA-D904-43AA-9372-92A4143F7FC7 - 376F25BA-D904-43AA-9372-92A4143F7FC7</string>
-		</dict>
-		<key>B6012337-618C-4E11-837C-BBA765CD1DFE</key>
-		<dict>
-			<key>from</key>
-			<string>CBC6513E-8ADC-41FA-920F-EC602C8FEA77 - CBC6513E-8ADC-41FA-920F-EC602C8FEA77</string>
-			<key>to</key>
-			<string>5681C1DE-F421-4F85-BA63-64E30D9AAD44 - 5681C1DE-F421-4F85-BA63-64E30D9AAD44</string>
-		</dict>
-		<key>BE0E3334-BDA4-4636-BB93-6C3F0C3EDE1C</key>
-		<dict>
-			<key>from</key>
-			<string>231A57D3-B8CE-47AB-BC15-97CB53B8C789 - 231A57D3-B8CE-47AB-BC15-97CB53B8C789</string>
-			<key>to</key>
-			<string>FBCF9B69-D57E-4D65-A3C1-BD1B90ABFAF7 - FBCF9B69-D57E-4D65-A3C1-BD1B90ABFAF7</string>
-		</dict>
-		<key>C1CACBF6-B7BD-450B-B432-FAA6A23963A6</key>
-		<dict>
-			<key>from</key>
-			<string>FB6162A4-F4DB-4215-B85B-8720E77057B6 - FB6162A4-F4DB-4215-B85B-8720E77057B6</string>
-			<key>to</key>
-			<string>A25D07DA-6096-4135-AE71-8410BCAB6A2E - A25D07DA-6096-4135-AE71-8410BCAB6A2E</string>
-		</dict>
-		<key>C3549BC9-129A-4490-A6DB-6567B1236B1D</key>
-		<dict>
-			<key>from</key>
 			<string>AC164BB2-15F4-4C93-839B-EC35E906404C - AC164BB2-15F4-4C93-839B-EC35E906404C</string>
-			<key>to</key>
-			<string>BC8A1628-D9D0-43B3-AD05-0F3A002CCBC5 - BC8A1628-D9D0-43B3-AD05-0F3A002CCBC5</string>
 		</dict>
-		<key>D0CDAAB2-84C1-4E06-BC06-F40D60596426</key>
+		<key>4BCA7296-C0D9-493C-9F16-459DCC657FF4</key>
 		<dict>
 			<key>from</key>
 			<string>5681C1DE-F421-4F85-BA63-64E30D9AAD44 - 5681C1DE-F421-4F85-BA63-64E30D9AAD44</string>
 			<key>to</key>
 			<string>BA0DA57D-EE73-4DFA-9A13-15C1948B403F - BA0DA57D-EE73-4DFA-9A13-15C1948B403F</string>
 		</dict>
-		<key>D806C2F1-A2BE-4B0A-A024-683D7AA82F1B</key>
+		<key>78DFCB28-5CF0-4EE3-B691-E9A893A5E915</key>
 		<dict>
 			<key>from</key>
+			<string>FF7CC719-053B-4F49-BB99-E5C727413B45 - FF7CC719-053B-4F49-BB99-E5C727413B45</string>
+			<key>to</key>
+			<string>231A57D3-B8CE-47AB-BC15-97CB53B8C789 - 231A57D3-B8CE-47AB-BC15-97CB53B8C789</string>
+		</dict>
+		<key>7FD7B54B-27CA-40D4-88A3-E33C012CDB15</key>
+		<dict>
+			<key>from</key>
+			<string>0E23066F-4BEF-4B0E-A4D0-51524783644B - 0E23066F-4BEF-4B0E-A4D0-51524783644B</string>
+			<key>to</key>
+			<string>A25D07DA-6096-4135-AE71-8410BCAB6A2E - A25D07DA-6096-4135-AE71-8410BCAB6A2E</string>
+		</dict>
+		<key>90C10AE8-3BC8-44FB-BD3A-8C3901D73F3B</key>
+		<dict>
+			<key>from</key>
+			<string>BA0DA57D-EE73-4DFA-9A13-15C1948B403F - BA0DA57D-EE73-4DFA-9A13-15C1948B403F</string>
+			<key>to</key>
+			<string>DBC4D568-069B-43AC-8B65-E505E4D8B03C - DBC4D568-069B-43AC-8B65-E505E4D8B03C</string>
+		</dict>
+		<key>95CBDA29-CA40-4C12-B14C-D56EB5E6B39E</key>
+		<dict>
+			<key>from</key>
+			<string>BC8A1628-D9D0-43B3-AD05-0F3A002CCBC5 - BC8A1628-D9D0-43B3-AD05-0F3A002CCBC5</string>
+			<key>to</key>
+			<string>376F25BA-D904-43AA-9372-92A4143F7FC7 - 376F25BA-D904-43AA-9372-92A4143F7FC7</string>
+		</dict>
+		<key>96022AB7-0C3D-40D1-A7AF-622876BA1BE3</key>
+		<dict>
+			<key>from</key>
+			<string>376F25BA-D904-43AA-9372-92A4143F7FC7 - 376F25BA-D904-43AA-9372-92A4143F7FC7</string>
+			<key>to</key>
 			<string>78531E74-AD79-4AB1-8649-E127D6A143C3 - 78531E74-AD79-4AB1-8649-E127D6A143C3</string>
-			<key>to</key>
-			<string>2F813970-92E2-49B7-86C6-B22DFCF483BD - 2F813970-92E2-49B7-86C6-B22DFCF483BD</string>
 		</dict>
-		<key>D9B8B7A9-5BC2-4DE5-BB50-1E1AE86CBFDD</key>
-		<dict>
-			<key>from</key>
-			<string>2F813970-92E2-49B7-86C6-B22DFCF483BD - 2F813970-92E2-49B7-86C6-B22DFCF483BD</string>
-			<key>to</key>
-			<string>84DE6E17-ABA9-4BB8-9442-0D6926AC56CB - 84DE6E17-ABA9-4BB8-9442-0D6926AC56CB</string>
-		</dict>
-		<key>DE035954-C6F1-451A-84AB-AE5CC840C7AE</key>
+		<key>BAD0C42C-F915-4D13-BA5E-F578E0E6F87F</key>
 		<dict>
 			<key>from</key>
 			<string>A25D07DA-6096-4135-AE71-8410BCAB6A2E - A25D07DA-6096-4135-AE71-8410BCAB6A2E</string>
 			<key>to</key>
 			<string>573BABBC-DA5A-4860-81B9-909E755928AA - 573BABBC-DA5A-4860-81B9-909E755928AA</string>
 		</dict>
-		<key>DEF64725-705D-4A30-B2B3-3F9B1230456B</key>
+		<key>BDB4AF83-201E-4097-8894-E82B4B6CA624</key>
 		<dict>
 			<key>from</key>
-			<string>1E1A05EA-8DBC-430E-A532-C795BDE4F55B - 1E1A05EA-8DBC-430E-A532-C795BDE4F55B</string>
-			<key>to</key>
 			<string>231A57D3-B8CE-47AB-BC15-97CB53B8C789 - 231A57D3-B8CE-47AB-BC15-97CB53B8C789</string>
+			<key>to</key>
+			<string>CBC6513E-8ADC-41FA-920F-EC602C8FEA77 - CBC6513E-8ADC-41FA-920F-EC602C8FEA77</string>
 		</dict>
-		<key>F0AF56BB-1CE9-449B-92C6-643881CC5ADD</key>
+		<key>C92A380A-14AE-4651-AA72-393DDD4393AE</key>
 		<dict>
 			<key>from</key>
-			<string>BA0DA57D-EE73-4DFA-9A13-15C1948B403F - BA0DA57D-EE73-4DFA-9A13-15C1948B403F</string>
+			<string>D01C1A3B-FE81-425C-A12C-5566BDDDAA91 - D01C1A3B-FE81-425C-A12C-5566BDDDAA91</string>
 			<key>to</key>
+			<string>1E1A05EA-8DBC-430E-A532-C795BDE4F55B - 1E1A05EA-8DBC-430E-A532-C795BDE4F55B</string>
+		</dict>
+		<key>D215396B-E8A9-4FF5-91F6-124FE7CF22F5</key>
+		<dict>
+			<key>from</key>
+			<string>2F813970-92E2-49B7-86C6-B22DFCF483BD - 2F813970-92E2-49B7-86C6-B22DFCF483BD</string>
+			<key>to</key>
+			<string>4CF4750C-411E-4C97-9C0A-7C382C0DB373 - 4CF4750C-411E-4C97-9C0A-7C382C0DB373</string>
+		</dict>
+		<key>ED1E715A-BDFB-40B5-AC7A-206B371C920F</key>
+		<dict>
+			<key>from</key>
+			<string>FB6162A4-F4DB-4215-B85B-8720E77057B6 - FB6162A4-F4DB-4215-B85B-8720E77057B6</string>
+			<key>to</key>
+			<string>0E23066F-4BEF-4B0E-A4D0-51524783644B - 0E23066F-4BEF-4B0E-A4D0-51524783644B</string>
+		</dict>
+		<key>EF235B59-F1FC-458B-B76B-68A94F916762</key>
+		<dict>
+			<key>from</key>
+			<string>AC164BB2-15F4-4C93-839B-EC35E906404C - AC164BB2-15F4-4C93-839B-EC35E906404C</string>
+			<key>to</key>
+			<string>BC8A1628-D9D0-43B3-AD05-0F3A002CCBC5 - BC8A1628-D9D0-43B3-AD05-0F3A002CCBC5</string>
+		</dict>
+		<key>F5A8A07A-F9F7-489A-9CFA-EB341624275F</key>
+		<dict>
+			<key>from</key>
+			<string>78531E74-AD79-4AB1-8649-E127D6A143C3 - 78531E74-AD79-4AB1-8649-E127D6A143C3</string>
+			<key>to</key>
+			<string>2F813970-92E2-49B7-86C6-B22DFCF483BD - 2F813970-92E2-49B7-86C6-B22DFCF483BD</string>
+		</dict>
+		<key>F821CEBC-347C-4160-80F5-8A18F959C471</key>
+		<dict>
+			<key>from</key>
+			<string>573BABBC-DA5A-4860-81B9-909E755928AA - 573BABBC-DA5A-4860-81B9-909E755928AA</string>
+			<key>to</key>
+			<string>A762DAC4-DE92-4DCB-B3E2-43728AAE5C8D - A762DAC4-DE92-4DCB-B3E2-43728AAE5C8D</string>
+		</dict>
+		<key>F85C49BA-4904-456C-AF92-453173477B20</key>
+		<dict>
+			<key>from</key>
 			<string>DBC4D568-069B-43AC-8B65-E505E4D8B03C - DBC4D568-069B-43AC-8B65-E505E4D8B03C</string>
+			<key>to</key>
+			<string>FB6162A4-F4DB-4215-B85B-8720E77057B6 - FB6162A4-F4DB-4215-B85B-8720E77057B6</string>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -2864,7 +3422,7 @@ mkdir Desktop/mods</string>
 			<key>name</key>
 			<string>mod name</string>
 			<key>value</key>
-			<string>minecraftloader</string>
+			<string>name</string>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -2874,7 +3432,7 @@ mkdir Desktop/mods</string>
 			<key>name</key>
 			<string>mod version</string>
 			<key>value</key>
-			<string>0.1.3</string>
+			<string>version</string>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -2884,7 +3442,7 @@ mkdir Desktop/mods</string>
 			<key>name</key>
 			<string>file</string>
 			<key>value</key>
-			<string>/Users/mannyrothman/Desktop/mods/MinecraftLoader 0.1.3 mc1.7.10.jar</string>
+			<string>AdvancedMachinesAS-1.7.10.jar</string>
 		</dict>
 	</array>
 	<key>workflowMetaData</key>
